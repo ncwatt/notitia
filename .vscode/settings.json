@@ -1,0 +1,28 @@
+{"liveSassCompile.settings.formats": [
+    // Default format
+    {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/assets/css"
+
+        // / -> denotes relative to the workspace root
+        // null denotes the same path as the SASS file
+        //"savePath": null,
+        //"savePathReplacementPairs": null
+    },
+    // Compressed format
+    {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "/assets/css"
+
+        // / -> denotes relative to the workspace root
+        // null denotes the same path as the SASS file
+        //"savePath": null,
+        //"savePathReplacementPairs": null
+    }
+],
+"liveSassCompile.settings.includeItems": [
+    "/assets/scss/styles.scss",
+]
+}
