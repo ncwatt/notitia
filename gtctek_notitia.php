@@ -27,3 +27,9 @@ define( 'GTCTEK_NOTITIA__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'GTCTEK_NOTITIA__PLUGIN_URI', plugin_dir_url( __FILE__ ) );
 define( 'GTCTEK_NOTITIA__PREPEND', 'gtctek' );
 define( 'GTCTEK_NOTITIA__TEXT_DOMAIN', 'gtctek-notitia' );
+
+// Include required classes
+require_once( GTCTEK_NOTITIA__PLUGIN_DIR . 'classes/class.gtctek.notitia.core.php' );
+
+// Trigger initialise actions across difference classes
+add_action( 'init', [ 'GTCTEK_Notitia_Core', 'init' ] );
