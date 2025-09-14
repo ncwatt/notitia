@@ -30,6 +30,8 @@ define( 'GTCTEK_NOTITIA__TEXT_DOMAIN', 'gtctek-notitia' );
 
 // Include required classes
 require_once( GTCTEK_NOTITIA__PLUGIN_DIR . 'classes/class.gtctek.notitia.core.php' );
+require_once( GTCTEK_NOTITIA__PLUGIN_DIR . 'classes/class.gtctek.notitia.duplicatepagepost.php' );
 
 // Trigger initialise actions across difference classes
 add_action( 'init', [ 'GTCTEK_Notitia_Core', 'init' ] );
+add_action( 'init', [ 'GTCTEK_Notitia_DuplicatePagePost', 'init' ] );
